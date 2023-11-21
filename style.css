@@ -225,7 +225,7 @@ header {
     font-size: 10px;
 }
 
-.balance {
+.transictionItem.balance {
     display: flex;
     flex-direction: row;
 }
