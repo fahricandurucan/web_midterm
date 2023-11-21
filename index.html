@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoBank</title>
+    <!-- I called the css file in html  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- THIS IS BODY -->
+
+<body>
+
+    <!-- HEADER PART -->
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Bank Logo">
+            <span>InnoBank</span>
+        </div>
+        <div class="online-banking">
+            <h5><em>Unlock the convenience of managing your money online. <br>Banking made easy, just for you.</em></h5>
+        </div>
+        <div class="user-options">
+            <div class="profile">
+                <div class="header-icon">
+                    <div class="search-icon">🔍</div>
+                    <div class="notification-icon">🔔</div>
+                </div>
+                <div class="person-name">
+                    <p>Welcome</p>
+                    <p>Fahrican!</p>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" alt="">
+            </div>
+
+
+            <div class="user-types">
+                <div class="user-type">Institutional</div>
+                <div class="user-type">Commercial</div>
+                <div class="user-type">Personal</div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- PART UNDER HEADER (INCLUDING LEFT-SIDE, RIGHT-SIDE, MAIN) -->
+    <div class="main">
+        <!--   LEFT-SIDE-BAR   -->
+        <aside class="left">
+            <div class="menuContainer">
+                <div class="menuItem">
+                    <p><strong>Bourse</strong></p>
+                    <img src="./images/bourse.png" alt="bourse">
+                </div>
+                <div class="menuItem">
+                    <p><strong>Payments</strong></p>
+                    <img src="./images/payments.png" alt="payments">
+
+                </div>
+                <div class="menuItem">
+                    <p><strong>Credits</strong></p>
+                    <img src="./images/credits.png" alt="credits">
+                </div>
+                <div class="menuItem">
+                    <p><strong>My Cards</strong></p>
+                    <img src="./images/myCards.png" alt="myCards">
+                </div>
+                <div class="menuItem">
+                    <p><strong>Investment</strong></p>
+                    <img src="./images/investment.png" alt="investment">
+                </div>
+                <div class="menuItem">
+                    <p><strong>Check/Note</strong></p>
+                    <img src="./images/checkNote.png" alt="checkNote">
+
+                </div>
+                <div class="menuItem">
+                    <p><strong>Retirement fund</strong></p>
+                    <img src="./images/retirement.png" alt="retirement">
+                </div>
+                <div class="menuItem">
+                    <p><strong>Others</strong></p>
+                    <img src="./images/other.png" alt="other">
+                </div>
+
+            </div>
+        </aside>
+
+        <!--   MAIN   -->
+        <main>
+            <h1 class="mainTitle">Welcome to Your Bank</h1>
+            <div class="exchange-rates">
+                <div class="rates-box">
+                    <h2>Exchange Rates</h2>
+                    <div class="rate">
+                        <div class="currency">
+                            <img src="./images/bist.png" alt="BIST Icon">
+                            BIST
+                        </div>
+                        <div class="value">7.854</div>
+                    </div>
+                    <div class="rate">
+                        <div class="currency">
+                            <img src="./images/dollar.png" alt="Dollar Icon">
+                            USD
+                        </div>
+                        <div class="value">21.5</div>
+                    </div>
+                    <div class="rate">
+                        <div class="currency">
+                            <img src="./images/euro.png" alt="Euro Icon">
+                            EURO
+                        </div>
+                        <div class="value">22.5</div>
+                    </div>
+                    <div class="rate">
+                        <div class="currency">
+                            <img src="./images/gold.png" alt="Gold Icon">
+                            GOLD
+                        </div>
+                        <div class="value">1800</div>
+                    </div>
+                    <div class="actions">
+                        <div class="action-box-buy">Buy Currency</div>
+                        <div class="action-box-sell">Sell Currency</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- News Section For Bank in Main -->
+            <div class="bank-news">
+                <h2 class="bank-news-header">Bank News</h2>
+                <div class="news-container">
+                    <div class="news-box">
+                        <h3>InnoBank customers' mobile phones can also be used as credit cards.</h3>
+                        <p>InnoBank is a first in the banking sector in Turkey by fully transferring all the features of
+                            the physical card to mobile payment.</p>
+                        <div class="detailButton">
+                            More Info
+                        </div>
+                    </div>
+                    <div class="news-box">
+                        <h3>250 million USD financing to InnoBank
+                        </h3>
+                        <p>InnoBank has made new investments worth approximately 250 million USD within the
+                            scope of its securitization program based on foreign remittance flows.</p>
+                        <div class="detailButton">
+                            More Info
+                        </div>
+                    </div>
+                    <div class="news-box">
+                        <h3>Support to farmers with Instant Agricultural Loan from InnoBank
+                        </h3>
+                        <p>InnoBank, which offers solutions to farmers in the field of sustainable
+                            agriculture by bringing together agriculture, technology and finance, "Instant
+                            Agriculture...</p>
+                        <div class="detailButton">
+                            More Info
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Part in Main-->
+
+            <form class="form-container">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+
+        <!--   Right Side Bar   -->
+        <aside class="right">
+            <div class="account-info">
+                <h2>Accounts</h2>
+                <img src="./images/account.png" alt="Account Image">
+                <p>5002 Mentese/Mugla Branch</p>
+                <br>
+
+                <div class="balance">
+                    <p>Balance</p>
+                    <p>1450₺</p>
+                </div>
+                <hr>
+                <p>IBAN</p>
+                <P>TR00 1234 4321 2225 6548 7539</P>
+                <hr>
+
+                <div class="fast-transactions">
+                    <div class="icon-box">
+                        <div class="round-icon">
+                            <img src="./images/sendMoney.png" alt="sendMoney">
+                        </div>
+                        <p>Send Money</p>
+                    </div>
+                    <div class="icon-box">
+                        <div class="round-icon">
+                            <img src="./images/bill.png" alt="bill">
+                        </div>
+                        <p>Pay Bill</p>
+                    </div>
+                    <div class="icon-box">
+                        <div class="round-icon">
+                            <img src="./images/qr.png" alt="qr">
+                        </div>
+                        <p>QR Process</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <h2>Account Activities</h2>
+            <div class="transictionContainer">
+                <div class="transictionItem">
+                    <div class="date">
+                        18 November 15.00
+                    </div>
+                    <div class="vertical-line"></div>
+
+                    <div class="content">
+                        Komisyon Tutarı
+                    </div>
+                    <div class="payment">
+                        <div>-300$</div>
+                        <div class="balance">Balance: 1120,23$</div>
+                    </div>
+                </div>
+                <div class="transictionItem">
+                    <div class="date">
+                        18 November 15.00
+                    </div>
+                    <div class="vertical-line"></div>
+
+                    <div class="content">
+                        Komisyon Tutarı
+                    </div>
+                    <div class="payment">
+                        <div>-300$</div>
+                        <div><img src="" alt=""></div>
+                        <div class="balance">Balance: 1120,23$</div>
+                    </div>
+                </div>
+                <div class="transictionItem">
+                    <div class="date">
+                        18 November 15.00
+                    </div>
+                    <div class="vertical-line"></div>
+
+                    <div class="content">
+                        Komisyon Tutarı
+                    </div>
+                    <div class="payment">
+                        <div>-300$</div>
+                        <div><img src="" alt=""></div>
+                        <div class="balance">Balance: 1120,23$</div>
+                    </div>
+                </div>
+                <div class="transictionItem">
+                    <div class="date">
+                        18 November 15.00
+                    </div>
+                    <div class="vertical-line"></div>
+
+                    <div class="content">
+                        Komisyon Tutarı
+                    </div>
+                    <div class="payment">
+                        <div>-300$</div>
+                        <div><img src="" alt=""></div>
+                        <div class="balance">Balance: 1120,23$</div>
+                    </div>
+                </div>
+                <div class="transictionItem">
+                    <div class="date">
+                        18 November 15.00
+                    </div>
+                    <div class="vertical-line"></div>
+
+                    <div class="content">
+                        Komisyon Tutarı
+                    </div>
+                    <div class="payment">
+                        <div>-300$</div>
+                        <div><img src="" alt=""></div>
+                        <div class="balance">Balance: 1120,23$</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- PART OF FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:info@innobank.com">info@innobank.com</a></p>
+                <p>Phone: +1 (777) 777-1907</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon"><img src="./images/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="icon"><img src="./images/linkedIn.png" alt="LinkedIn"></a>
+                    <a href="#" class="icon"><img src="./images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 InnoBank. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

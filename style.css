@@ -1,0 +1,521 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+/* MY COLORS */
+:root {
+    --c-primary: rgb(16, 37, 105);
+    --c-lightBlue: rgb(187, 203, 255);
+    --c-white: rgb(255, 255, 255);
+
+}
+
+body {
+    background-color: var(--c-white);
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    min-width: 850px;
+}
+
+
+/* HEADER PART */
+header {
+    background-color: var(--c-primary);
+    padding: 2em 0 2em 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: var(--c-white);
+    font-size: 1.5em;
+}
+
+.online-banking {
+    color: var(--c-white);
+    font-size: 1.5em;
+}
+
+.header-icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.user-types {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 15%;
+}
+
+.profile .person-name {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.user-type {
+    border: 1px solid var(--c-white);
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 8px;
+    color: black;
+    font-family: DM sans-serif;
+    background-color: var(--c-white);
+    cursor: pointer;
+}
+
+/* -------------HEADER END-------------------- */
+
+
+/* LEFT SIDE BAR */
+.left {
+    /* background-color: forestgreen; */
+    flex: 0.75;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-primary);
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+}
+
+.menuItem {
+    height: 70px;
+    width: 80%;
+    background-color: var(--c-lightBlue);
+    border-radius: 8px;
+    margin-top: 24px;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+    color: var(--c-primary);
+}
+
+.menuItem:hover {
+    transform: scale(1.12);
+}
+
+.menuItem img {
+    height: 32px;
+    width: auto;
+}
+
+/* ---------- LEFT SIDE END ----------*/
+
+
+
+
+/* RIGHT SIDE BAR PART */
+.right {
+    background-color: var(--c-primary);
+    flex: 0.75;
+}
+
+.account-info img {
+    height: 50px;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fast-transactions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.round-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--c-white);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.icon-box {
+    text-align: center;
+    color: var(--c-white);
+    transition: transform 0.25s ease-in-out;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+.transictionContainer {
+    display: flex;
+    flex-direction: column;
+    height: 48%;
+    align-items: center;
+}
+
+.transictionItem {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 80%;
+    background-color: var(--c-lightBlue);
+    border-radius: 8px;
+    transition: transform 0.2s ease-in;
+    color: var(--c-primary);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+
+}
+
+.transictionItem:hover {
+    transform: scale(1.12);
+}
+
+.vertical-line {
+    height: 40px;
+    width: 2px;
+    background-color: var(--c-primary);
+    margin: 0 auto;
+    margin: 0 2px 0 0px;
+}
+
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.balance {
+    display: flex;
+    flex-direction: row;
+}
+
+/* --------- RIGHT SIDE END */
+
+
+/* MAIN PART */
+
+main {
+    background-color: var(--c-white);
+    flex: 2.5;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+
+}
+
+.mainTitle {
+    color: var(--c-primary);
+}
+
+
+.rates-box {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: var(--c-white);
+    box-shadow: 5px 5px 5px 5px var(--c-lightBlue);
+
+}
+
+.rates-box h2 {
+    color: var(--c-lightBlue);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    background-color: var(--c-white);
+}
+
+.currency {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.currency img {
+    height: 24px;
+    width: 24px;
+}
+
+.value {
+    font-size: 1.2em;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.action-box-buy {
+    border: 1px solid var(--c-white);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: var(--c-white);
+    cursor: pointer;
+    background-color: #15E890;
+    transition: transform 0.3s ease-in;
+}
+
+.action-box-buy:hover {
+    transform: scale(1.1);
+}
+
+.action-box-sell:hover {
+    transform: scale(1.1);
+}
+
+
+.action-box-sell {
+    border: 1px solid var(--c-white);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: var(--c-white);
+    cursor: pointer;
+    background-color: #fd684e;
+    transition: transform 0.3s ease-in;
+
+}
+
+
+.bank-news {
+    background-color: var(--c-lightBlue);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: var(--c-white);
+}
+
+.bank-news h2 {
+    color: var(--c-primary);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-container {
+    background-color: var(--c-white);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.news-box {
+    border: 1px solid var(--c-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px var(--c-lightBlue);
+    transition: transform 0.3s ease-in;
+}
+
+.news-box:hover {
+    transform: scale(1.03);
+
+}
+
+.news-box p {
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+.bank-news-header {
+    color: var(--c-primary);
+}
+
+.news-box h3 {
+    color: var(--c-primary);
+}
+
+.detailButton {
+    border: 2px solid var(--c-lightBlue);
+    padding: 10px;
+    border-radius: 32px;
+    margin-top: 5px;
+    color: white;
+    background-color: var(--c-primary);
+}
+
+
+/* form part (----  MAIN  ----) */
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px 3px var(--c-lightBlue);
+}
+
+.form-container h2 {
+    color: var(--c-primary);
+}
+
+.form-container label {
+    display: block;
+    margin-top: 12px;
+    color: var(--c-primary);
+    text-align: left;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    background-color: var(--c-primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #204080;
+}
+
+/*------------ MAIN END -----------*/
+
+
+
+
+/* FOOTER PART */
+
+footer {
+    background-color: #333;
+    color: var(--c-white);
+    padding: 10px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #15E890;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: var(--c-white);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #15E890;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.icon {
+    margin-bottom: 10px;
+
+}
+
+.icon img {
+    width: 30px;
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ------- FOOTER END */
+
+@media all and (max-width: 500px) {
+    .main {
+
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:222px) {
+    body {
+        min-width: 400px;
+    }
+}
